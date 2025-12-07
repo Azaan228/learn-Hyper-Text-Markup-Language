@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lagn="en">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>Simple Form</h1>
+
+
+    <form>
+        <!--Fieldset and Legend-->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!--Label and Input-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+
+            <!--Label and Input with Datalist-->
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" list="cities" placeholder="Enter your city">
+            <datalist id="cities">
+                <option value="Karachi">
+                <option value="Quetta">
+                <option value="Lahore">
+                <option value="Multan">
+                <option value="Islamabad">    
+            </datalist>
+            <br><br>
+
+            <!--Textarea-->
+            <label for="comments">Comment:</label>
+            <textarea id="comments" name="comments" rows="5" cols="60" placeholder="Enter your comments"></textarea>
+            <br><br>
+        </fieldset>
+
+        <!--Dropdown Menu-->
+        <label for="department">Choose a department</label>
+        <select id="department" name="department">
+            <optgroup label="Technical">
+                <option value="development">Development</option>
+                <option value="it_support">IT Support</option>
+            </optgroup>
+            <optgroup label="Administrative">
+                <option value="hr">Human Resources</option>
+                <option value="finance">Finance</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <!--Output-->
+        <label for="calculation">Calculation Result:</label>
+        <output id="calculation" name="result">0</output>
+        <br><br>
+
+        <!--Button-->
+        <button type="submet">Submit</button>
+    </form>
+        
+</body>
+</html>
